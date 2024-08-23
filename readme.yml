@@ -1,0 +1,24 @@
+readme:
+  name: Buto-Plugin-JsonRequest
+  date: '2024-08-23'
+  description: |
+    Handle output of json request.
+    - Add proper content type header.
+    - Invoking method json_encode.
+    - Output via php exit method.
+  item:
+    -
+      name: Usage
+      description: |
+        ````
+        wfPlugin::includeonce('json/request');
+        $jsonRequest = new PluginJsonRequest();
+        $jsonRequest->output($data);
+        ````
+    -
+      name: Methods
+      item:
+        -
+          name: output
+          description: |
+            Pass an array as only parameter.
